@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 20px;
+  text-align:center;
+}
+</style>
+<font size="+8">DES Visualizer</font>
+<body>
+<br>
+<br>
+
+<font size="+4">Encryption</font>
+<br>
+Values are represented in Hex
+<br>
+<br>
+<font size="+1">Plaintext:</font>
+{{text}}
+<br>
+<font size="+1">Key:</font>
+{{key}}
+<br>
+<br>
+<font size="+2">Subkeys</font>
+<br>
+Subkey1:
+{{hexSubKey1}}
+<br>
+Subkey2:
+{{hexSubKey2}}
+<br>
+Subkey3:
+{{hexSubKey3}}
+<br>
+Subkey4:
+{{hexSubKey4}}
+<br>
+Subkey5:
+{{hexSubKey5}}
+<br>
+Subkey6:
+{{hexSubKey6}}
+<br>
+Subkey7:
+{{hexSubKey7}}
+<br>
+Subkey8:
+{{hexSubKey8}}
+<br>
+Subkey9:
+{{hexSubKey9}}
+<br>
+Subkey10:
+{{hexSubKey10}}
+<br>
+Subkey11:
+{{hexSubKey11}}
+<br>
+Subkey12:
+{{hexSubKey12}}
+<br>
+Subkey13:
+{{hexSubKey13}}
+<br>
+Subkey14:
+{{hexSubKey14}}
+<br>
+Subkey15:
+{{hexSubKey15}}
+<br>
+Subkey16:
+{{hexSubKey16}}
+<br>
+<br>
+<font size="+2">Ciphertext after each round of encryption</font>
+<br>
+Round1:
+{{round1}}
+<br>
+Round2:
+{{round2}}
+<br>
+Round3:
+{{round3}}
+<br>
+Round4:
+{{round4}}
+<br>
+Round5:
+{{round5}}
+<br>
+Round6:
+{{round6}}
+<br>
+Round7:
+{{round7}}
+<br>
+Round8:
+{{round8}}
+<br>
+Round9:
+{{round9}}
+<br>
+Round10:
+{{round10}}
+<br>
+Round11:
+{{round11}}
+<br>
+Round12:
+{{round12}}
+<br>
+Round13:
+{{round13}}
+<br>
+Round14:
+{{round14}}
+<br>
+Round15:
+{{round15}}
+<br>
+Round16:
+{{round16}}
+<br>
+<br>
+<font size="+2">Visualization of encryption</font>
+<br>
+<div style="width:800px; margin:0 auto;">
+Plaintext
+        <br>
+        {{text}}
+        <br>
+        &#8595;
+        <br>
+        Initial Permutation
+        <br>
+    {{permBinText}}
+        </div>
+<table>
+	<tr>
+
+    	<td>Plaintext
+        <br>
+        {{permBinText}}
+        <br>
+        &#8595;
+        <br>
+        Subkey1: {{hexSubKey1}} &#8594;
+        block cipher encrpytion
+        <br>
+        &#8595;
+        <br>
+        Ciphertext
+        <br>
+        {{round1}}
+        </td>
+
+     	<td>Plaintext
+        <br>
+        {{round1}}
+        <br>
+        &#8595;
+        <br>
+        Subkey2: {{hexSubKey2}} &#8594;
+        block cipher encrpytion
+        <br>
+        &#8595;
+        <br>
+        Ciphertext
+        <br>
+        {{round2}}
+        </td>
+
+        	<td>Plaintext
+        <br>
+        {{round2}}
+        <br>
+        &#8595;
+        <br>
+        Subkey3: {{hexSubKey3}} &#8594;
+        block cipher encrpytion
+        <br>
+        &#8595;
+        <br>
+        Ciphertext
+        <br>
+        {{round3}}
+        </td>
+
+       	<td>Plaintext
+        <br>
+        {{round3}}
+        <br>
+        &#8595;
+        <br>
+        Subkey4: {{hexSubKey4}} &#8594;
+        block cipher encrpytion
+        <br>
+        &#8595;
+        <br>
+        Ciphertext
+        <br>
+        {{round4}}
+        </td>
+
+
+    </tr>
+    	<tr>
+     	<td>Plaintext
+        <br>
+        {{round4}}
+        <br>
+        &#8595;
+        <br>
+        Subkey5: {{hexSubKey5}} &#8594;
+        block cipher encrpytion
+        <br>
+        &#8595;
+        <br>
+        Ciphertext
+        <br>
+        {{round5}}
+        </td>
+
+
+     	<td>Plaintext
+        <br>
+        {{round5}}
+        <br>
+        &#8595;
+        <br>
+        Subkey6: {{hexSubKey6}} &#8594;
+        block cipher encrpytion
+        <br>
+        &#8595;
+        <br>
+        Ciphertext
+        <br>
+        {{round6}}
+        </td>
+
+     	<td>Plaintext
+        <br>
+        {{round6}}
+        <br>
+        &#8595;
+        <br>
+        Subkey7: {{hexSubKey7}} &#8594;
+        block cipher encrpytion
+        <br>
+        &#8595;
+        <br>
+        Ciphertext
+        <br>
+        {{round7}}
+        </td>
+
+     	<td>Plaintext
+        <br>
+        {{round7}}
+        <br>
+        &#8595;
+        <br>
+        Subkey8: {{hexSubKey8}} &#8594;
+        block cipher encrpytion
+        <br>
+        &#8595;
+        <br>
+        Ciphertext
+        <br>
+        {{round8}}
+        </td>
+
+
+    </tr>
+
+    <tr>
+     	<td>Plaintext
+        <br>
+        {{round8}}
+        <br>
+        &#8595;
+        <br>
+        Subkey9: {{hexSubKey9}} &#8594;
+        block cipher encrpytion
+        <br>
+        &#8595;
+        <br>
+        Ciphertext
+        <br>
+        {{round9}}
+        </td>
+
+     	<td>Plaintext
+        <br>
+        {{round9}}
+        <br>
+        &#8595;
+        <br>
+        Subkey10: {{hexSubKey10}} &#8594;
+        block cipher encrpytion
+        <br>
+        &#8595;
+        <br>
+        Ciphertext
+        <br>
+        {{round10}}
+        </td>
+
+     	<td>Plaintext
+        <br>
+        {{round10}}
+        <br>
+        &#8595;
+        <br>
+        Subkey11: {{hexSubKey11}} &#8594;
+        block cipher encrpytion
+        <br>
+        &#8595;
+        <br>
+        Ciphertext
+        <br>
+        {{round11}}
+        </td>
+
+     	<td>Plaintext
+        <br>
+        {{round11}}
+        <br>
+        &#8595;
+        <br>
+        Subkey12: {{hexSubKey12}} &#8594;
+        block cipher encrpytion
+        <br>
+        &#8595;
+        <br>
+        Ciphertext
+        <br>
+        {{round12}}
+        </td>
+    </tr>
+
+
+        <tr>
+     	<td>Plaintext
+        <br>
+        {{round12}}
+        <br>
+        &#8595;
+        <br>
+        Subkey13: {{hexSubKey13}} &#8594;
+        block cipher encrpytion
+        <br>
+        &#8595;
+        <br>
+        Ciphertext
+        <br>
+        {{round13}}
+        </td>
+
+     	<td>Plaintext
+        <br>
+        {{round13}}
+        <br>
+        &#8595;
+        <br>
+        Subkey14: {{hexSubKey14}} &#8594;
+        block cipher encrpytion
+        <br>
+        &#8595;
+        <br>
+        Ciphertext
+        <br>
+        {{round14}}
+        </td>
+
+     	<td>Plaintext
+        <br>
+        {{round14}}
+        <br>
+        &#8595;
+        <br>
+        Subkey15: {{hexSubKey15}} &#8594;
+        block cipher encrpytion
+        <br>
+        &#8595;
+        <br>
+        Ciphertext
+        <br>
+        {{round15}}
+        </td>
+
+     	<td>Plaintext
+        <br>
+        {{round15}}
+        <br>
+        &#8595;
+        <br>
+        Subkey16: {{hexSubKey16}} &#8594;
+        block cipher encrpytion
+        <br>
+        &#8595;
+        <br>
+        Ciphertext
+        <br>
+        {{round16}}
+        </td>
+    </tr>
+<table>
+<div style="width:800px; margin:0 auto;">
+Plaintext
+        <br>
+    {{round16}}
+    <br>
+        &#8595;
+        <br>
+        Reverse Permutation
+        <br>
+        {{hexFinal}}
+        </div>
+        <br>
+Ciphertext in hex:
+{{hexFinal}}
+</body>
+
+
+</html>
